@@ -24,7 +24,7 @@
           </p>
           <p className="text-white md:text-base text-sm">
             Cụm khu Village Center được thiết kế theo cấu trúc nhà gian chữ
-            Đinh, mái đầu đao với ballroom (sức chứa 150 người, pool bar, 2 bể
+            Đinh, mái đầu đao với ballroom sức chứa 150 người, pool bar, 2 bể
             bơi (1 bể bơi vô cực hướng biển, 1 bể bơi nhỏ hơn bao quanh bởi cây
             xanh), khu vực ăn uống (nằm rải rác tạo cảm giác như một khu chợ
             làng) với đa dạng các dịch vụ ẩm thực mang phong vị Á, Âu,..
@@ -49,7 +49,7 @@
           </p>
           <p className="text-white md:text-base text-sm">
             Cụm khu Village Center được thiết kế theo cấu trúc nhà gian chữ
-            Đinh, mái đầu đao với ballroom (sức chứa 150 người, pool bar, 2 bể
+            Đinh, mái đầu đao với ballroom sức chứa 150 người, pool bar, 2 bể
             bơi (1 bể bơi vô cực hướng biển, 1 bể bơi nhỏ hơn bao quanh bởi cây
             xanh), khu vực ăn uống (nằm rải rác tạo cảm giác như một khu chợ
             làng) với đa dạng các dịch vụ ẩm thực mang phong vị Á, Âu,..
@@ -74,7 +74,7 @@
           </p>
           <p className="text-white md:text-base text-sm">
             Cụm khu Village Center được thiết kế theo cấu trúc nhà gian chữ
-            Đinh, mái đầu đao với ballroom (sức chứa 150 người, pool bar, 2 bể
+            Đinh, mái đầu đao với ballroom sức chứa 150 người, pool bar, 2 bể
             bơi (1 bể bơi vô cực hướng biển, 1 bể bơi nhỏ hơn bao quanh bởi cây
             xanh), khu vực ăn uống (nằm rải rác tạo cảm giác như một khu chợ
             làng) với đa dạng các dịch vụ ẩm thực mang phong vị Á, Âu,..
@@ -99,7 +99,7 @@
           </p>
           <p className="text-white md:text-base text-sm">
             Cụm khu Village Center được thiết kế theo cấu trúc nhà gian chữ
-            Đinh, mái đầu đao với ballroom (sức chứa 150 người, pool bar, 2 bể
+            Đinh, mái đầu đao với ballroom sức chứa 150 người, pool bar, 2 bể
             bơi (1 bể bơi vô cực hướng biển, 1 bể bơi nhỏ hơn bao quanh bởi cây
             xanh), khu vực ăn uống (nằm rải rác tạo cảm giác như một khu chợ
             làng) với đa dạng các dịch vụ ẩm thực mang phong vị Á, Âu,..
