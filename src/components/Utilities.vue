@@ -15,7 +15,7 @@
 </template>
 <script setup>
 import Title from "./content/Title.vue";
-import SliderUtilies from "./slider/sliderUtilies.vue";
+import SliderUtilies from "./slider/SliderUtilities.vue";
 </script>
 <script>
 export default {
