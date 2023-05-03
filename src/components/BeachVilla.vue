@@ -1,7 +1,7 @@
 <template>
   <div class="grid md:grid-cols-2 grid-cols-1 beackvilla">
     <div class="order-2 md:order-none">
-      <SliderThumb />
+      <SliderThumb :filteredImage="filteredImage" />
     </div>
     <div class="flex flex-col md:px-5 md:py-10 order-1 md:order-none">
       <Title class="" :title="beack.title" :textname="beack.textname" />
@@ -51,6 +51,13 @@ export default {
           sd: "1.256",
         },
       ],
+      images: [
+        { image: "/img/bds5.jpg" },
+        { image: "/img/beck1.png" },
+        { image: "/img/bds9.jpg" },
+        { image: "/img/beck1.png" },
+        { image: "/img/bds6.jpg" },
+      ],
     };
   },
   computed: {
@@ -62,6 +69,11 @@ export default {
     filteredDsc() {
       return this.dsc.filter((item) => {
         return item.lh;
+      });
+    },
+    filteredImage() {
+      return this.images.filter((im) => {
+        return im.image;
       });
     },
   },

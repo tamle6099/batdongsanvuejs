@@ -5,35 +5,8 @@
       :thumbs="{ swiper: thumbsSwiper }"
       class="mySwiper2"
     >
-      <swiper-slide
-        ><img
-          src="https://swiperjs.com/demos/images/nature-1.jpg" /></swiper-slide
-      ><swiper-slide
-        ><img
-          src="https://swiperjs.com/demos/images/nature-2.jpg" /></swiper-slide
-      ><swiper-slide
-        ><img
-          src="https://swiperjs.com/demos/images/nature-3.jpg" /></swiper-slide
-      ><swiper-slide
-        ><img
-          src="https://swiperjs.com/demos/images/nature-4.jpg" /></swiper-slide
-      ><swiper-slide
-        ><img
-          src="https://swiperjs.com/demos/images/nature-5.jpg" /></swiper-slide
-      ><swiper-slide
-        ><img
-          src="https://swiperjs.com/demos/images/nature-6.jpg" /></swiper-slide
-      ><swiper-slide
-        ><img
-          src="https://swiperjs.com/demos/images/nature-7.jpg" /></swiper-slide
-      ><swiper-slide
-        ><img
-          src="https://swiperjs.com/demos/images/nature-8.jpg" /></swiper-slide
-      ><swiper-slide
-        ><img
-          src="https://swiperjs.com/demos/images/nature-9.jpg" /></swiper-slide
-      ><swiper-slide
-        ><img src="https://swiperjs.com/demos/images/nature-10.jpg"
+      <swiper-slide v-for="(item, index) in filteredImage" :key="index">
+        <img :src="item.image"
       /></swiper-slide>
     </swiper>
     <swiper
@@ -45,35 +18,8 @@
       :watchSlidesProgress="true"
       class="mySwiper"
     >
-      <swiper-slide
-        ><img
-          src="https://swiperjs.com/demos/images/nature-1.jpg" /></swiper-slide
-      ><swiper-slide
-        ><img
-          src="https://swiperjs.com/demos/images/nature-2.jpg" /></swiper-slide
-      ><swiper-slide
-        ><img
-          src="https://swiperjs.com/demos/images/nature-3.jpg" /></swiper-slide
-      ><swiper-slide
-        ><img
-          src="https://swiperjs.com/demos/images/nature-4.jpg" /></swiper-slide
-      ><swiper-slide
-        ><img
-          src="https://swiperjs.com/demos/images/nature-5.jpg" /></swiper-slide
-      ><swiper-slide
-        ><img
-          src="https://swiperjs.com/demos/images/nature-6.jpg" /></swiper-slide
-      ><swiper-slide
-        ><img
-          src="https://swiperjs.com/demos/images/nature-7.jpg" /></swiper-slide
-      ><swiper-slide
-        ><img
-          src="https://swiperjs.com/demos/images/nature-8.jpg" /></swiper-slide
-      ><swiper-slide
-        ><img
-          src="https://swiperjs.com/demos/images/nature-9.jpg" /></swiper-slide
-      ><swiper-slide
-        ><img src="https://swiperjs.com/demos/images/nature-10.jpg"
+      <swiper-slide v-for="(item, index) in filteredImage" :key="index">
+        <img :src="item.image"
       /></swiper-slide>
     </swiper>
   </div>
@@ -89,6 +35,12 @@ import SwiperCore, { Navigation, Thumbs } from "swiper/core";
 SwiperCore.use([Navigation, Thumbs]);
 
 export default {
+  props: {
+    filteredImage: {
+      type: Array,
+      default: () => [],
+    },
+  },
   components: {
     Swiper,
     SwiperSlide,

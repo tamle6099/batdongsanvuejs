@@ -13,7 +13,7 @@
         </p>
       </div>
     </div>
-    <SliderThumb />
+    <SliderThumb :filteredImage="filteredImage" />
   </div>
 </template>
 
@@ -94,12 +94,24 @@ export default {
           name: "Hotline: 0903 002 554",
         },
       ],
+      images: [
+        { image: "/img/bds1.jpg" },
+        { image: "/img/bds2.jpg" },
+        { image: "/img/bds3.jpg" },
+        { image: "/img/bds4.jpg" },
+        { image: "/img/bds5.jpg" },
+      ],
     };
   },
   computed: {
     filteredProducts() {
       return this.contexts.filter((context) => {
         return context.name.toLowerCase();
+      });
+    },
+    filteredImage() {
+      return this.images.filter((im) => {
+        return im.image;
       });
     },
   },

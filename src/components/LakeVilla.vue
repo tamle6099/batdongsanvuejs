@@ -9,7 +9,7 @@
       />
     </div>
     <div>
-      <SliderThumb />
+      <SliderThumb :filteredImage="filteredImage" />
     </div>
   </div>
 </template>
@@ -43,6 +43,13 @@ export default {
           sd: "765",
         },
       ],
+      images: [
+        { image: "/img/bds6.jpg" },
+        { image: "/img/beck1.png" },
+        { image: "/img/bds9.jpg" },
+        { image: "/img/beck1.png" },
+        { image: "/img/bds5.jpg" },
+      ],
     };
   },
   computed: {
@@ -54,6 +61,11 @@ export default {
     filteredDsc() {
       return this.dsc.filter((item) => {
         return item.lh;
+      });
+    },
+    filteredImage() {
+      return this.images.filter((im) => {
+        return im.image;
       });
     },
   },
